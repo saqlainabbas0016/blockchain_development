@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SumCalculator {
+    // Function to calculate sum of numbers from 1 to n
+    function calculateSum(uint256 n) public pure returns (uint256) {
+        uint256 sum = 0;
+
+        for (uint256 i = 1; i <= n; i++) {
+            sum += i;
+        }
+
+        return sum;
+    }
+}
